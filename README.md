@@ -1,12 +1,10 @@
+# Overview
+Website [nathanhutchison.com](https://www.nathanhutchison.com/) created using the template Full Width Pics from Bootstrap.  HTML, additional files, and layout has been created specifically for this site.  These files hosted on this GitHub are the active files for the website which is hosted by Netlify.
+
 # [Start Bootstrap - Full Width Pics](https://startbootstrap.com/template-overviews/full-width-pics/)
 
 [Full Width Pics](http://startbootstrap.com/template-overviews/full-width-pics/) is an HTML starter template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template features numerous full width background image content sections.
 
-## Preview
-
-[![Full Width Pics Preview](https://startbootstrap.com/assets/img/templates/full-width-pics.jpg)](https://blackrockdigital.github.io/startbootstrap-full-width-pics/)
-
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-full-width-pics/)**
 
 ## Status
 
@@ -16,25 +14,6 @@
 [![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics)
 [![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics?type=dev)
 
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/full-width-pics/)
-* Install via npm: `npm i startbootstrap-full-width-pics`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-full-width-pics.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-full-width-pics)
-
-## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
-
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
-
-You must have npm and Gulp installed globally on your machine in order to use these features.
 
 ## Bugs and Issues
 

@@ -2,112 +2,292 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nathan Hutchison - Senior Product Manager specializing in data-driven product development and analytics.">
+  <meta name="author" content="Nathan Hutchison">
 
-  <title>Hutchison Home</title>
+  <title>Nathan Hutchison</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/full-width-pics.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Nathan Hutchison's Portfolio</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="header-name">Nathan Hutchison</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="HutchisonWebsiteProjects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="HutchisonWebsiteContact.html">Contact</a>
-          </li>
-        </ul>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#beyond">Beyond Work</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Intro -->
+  <section class="intro">
+    <div class="container">
+      <div class="intro-content">
+        <img src="headshot-gray.jpeg" alt="Nathan Hutchison" class="intro-photo">
+        <div class="intro-text">
+          <h1>Nathan Hutchison</h1>
+          <p class="intro-title">Senior Product Manager</p>
+          <p class="intro-bio">
+            I build products at the intersection of data and user experience. B.S. Computer Science, M.S. Engineering Management.
+          </p>
+          <div class="intro-links">
+            <a href="HutchisonResume.pdf" target="_blank">Resume</a>
+            <a href="https://www.linkedin.com/in/nahutch" target="_blank">LinkedIn</a>
+            <a href="https://github.com/nahutch" target="_blank">GitHub</a>
+            <a href="mailto:nathanehutchison@gmail.com">Email</a>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
+  </section>
 
-  <!-- Header - set the background image for the header in the line below -->
-  <header class="py-5 bg-image-full" style="background-image: url('tavabeach1.jpg');">
-    <div style="height: 250px;"></div>
-    <img class="" alt="">
-  </header>
-<!--
-<header class="py-5 bg-image-full" style="background-image: url('MexicoBeach.png');">
-    <img class="" alt="">
-      <div style="height: 200px;"></div>
-  </header>
-
--->
-
-  <!-- Content section -->
-  <section class="py-5">
+  <!-- Experience -->
+  <section id="experience">
     <div class="container">
-    <right><img src="headshot.jpg" alt="headshot" style="width:200px;height:240px;" align="right"></right>
-      <h1>Home</h1>
-        
-      <p class="lead">Welcome to my webpage!</p>
-      <p>Thank you for visiting my webpage. I am currently a Salesforce Analyst at Varian Medical Systems.  I graduated from Santa Clara University in June 2019 with a Masters of Science in Engineering Management and Leadership.  I also received my undergraduate degree in Computer Science(emphasis in Algorithms & Complexity) from Santa Clara in 2018.
-          <br/>
-          <br/>
-          <br/>
-      </p>
-           
+      <div class="section-header">
+        <h2>Experience</h2>
+      </div>
 
+      <div class="experience-list">
+        <!-- Chartmetric -->
+        <div class="experience-item">
+          <div class="experience-header" onclick="toggleExperience(this)">
+            <div class="experience-header-left">
+              <h3>Senior Product Manager</h3>
+              <p class="company">Chartmetric</p>
+            </div>
+            <div class="experience-header-right">
+              <p class="dates">2022 - Present</p>
+              <p class="experience-toggle">+ Details</p>
+            </div>
+          </div>
+          <div class="experience-details">
+            <p>Leading product strategy for a music analytics platform that helps record labels, artists, and managers make data-driven decisions about their careers and catalogs.</p>
+            <ul>
+              <li>Own the product roadmap for core analytics features serving major labels and independent artists</li>
+              <li>Lead cross-functional collaboration with engineering, design, and data science teams</li>
+              <li>Conduct user research and translate insights into product requirements</li>
+              <li>Drive feature prioritization based on user feedback and business impact</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Sundae -->
+        <div class="experience-item">
+          <div class="experience-header" onclick="toggleExperience(this)">
+            <div class="experience-header-left">
+              <h3>Product Manager</h3>
+              <p class="company">Sundae</p>
+            </div>
+            <div class="experience-header-right">
+              <p class="dates">2021 - 2022</p>
+              <p class="experience-toggle">+ Details</p>
+            </div>
+          </div>
+          <div class="experience-details">
+            <p>Built products for a residential real estate marketplace that helps homeowners sell distressed properties.</p>
+            <ul>
+              <li>Managed end-to-end product development for marketplace features</li>
+              <li>Worked cross-functionally with engineering, operations, and sales teams</li>
+              <li>Implemented analytics tracking to measure key conversion metrics</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Varian -->
+        <div class="experience-item">
+          <div class="experience-header" onclick="toggleExperience(this)">
+            <div class="experience-header-left">
+              <h3>Salesforce Analyst</h3>
+              <p class="company">Varian Medical Systems</p>
+            </div>
+            <div class="experience-header-right">
+              <p class="dates">2019 - 2021</p>
+              <p class="experience-toggle">+ Details</p>
+            </div>
+          </div>
+          <div class="experience-details">
+            <p>Drove Salesforce optimization and data analytics for a leading medical technology company focused on cancer treatment solutions.</p>
+            <ul>
+              <li>Led Salesforce system improvements and workflow automation</li>
+              <li>Built dashboards and reports for sales and operations teams</li>
+              <li>Became the go-to technical resource within first year on a new technology stack</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="experience-item">
+          <div class="experience-header" onclick="toggleExperience(this)">
+            <div class="experience-header-left">
+              <h3>Education</h3>
+              <p class="company">Santa Clara University</p>
+            </div>
+            <div class="experience-header-right">
+              <p class="experience-toggle">+ Details</p>
+            </div>
+          </div>
+          <div class="experience-details">
+            <ul>
+              <li><strong>M.S. Engineering Management & Leadership</strong></li>
+              <li><strong>B.S. Computer Science</strong>, emphasis in Algorithms & Complexity</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Image Section - set the background image for the header in the line below -->
-  <section class="py-5 bg-image-full" style="background-image: url('tavsurf1.jpg');">
-    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-    <div style="height: 350px;"></div>
-  </section>
-   
-  <!-- Content section -->
-  <section class="py-5">
+  <!-- Work / Projects -->
+  <section id="work">
     <div class="container">
-      <h1>About Me:</h1>
-        <p class="lead">Work Interests:</p>
-          <p>I want to use my analytical background to propel me into a Project Manager or Analyst position.  During my time as a Salesforce Analyst, I have been able to learn an entirely new system and excel at my role within one year working with a new technology.  My strength lie in my drive, work eithic, and passion to always want to learn more.</p>
-        <p class="lead">Outside of work intrests:</p>
-          <p>When I am not working I love to ski, surf, and travel the world! All of the photos seen on this website are the photos I have collected over my travels. I have been extremely lucky to be able to travel as much as I have in my life.  Seeing different cultures and people has given me a better perspective about what I want to accomplish in my life. 
-          <br/>
-          <br/> Outside of travel, I enjoy sports, movies, and music. I also love to learn! I always find myself getting enthralled in new content.  Through my career, I have always been working on outside passion work to keep my skills sharp!
-        </p>
+      <div class="section-header">
+        <h2>Selected Work</h2>
+      </div>
+
+      <div class="projects-list">
+        <!-- Chartmetric Project -->
+        <article class="project">
+          <div class="project-header">
+            <h3>Music Analytics Platform</h3>
+            <span class="project-type">Chartmetric</span>
+          </div>
+          <p class="project-summary">
+            Leading product development for analytics tools that help music industry professionals track artist performance across streaming platforms, social media, and radio.
+          </p>
+          <div class="project-body">
+            <h4>Problem</h4>
+            <p>Music industry professionals needed a unified way to track artist performance across dozens of fragmented data sources - streaming platforms, social media, radio airplay, and playlist placements.</p>
+
+            <h4>Approach</h4>
+            <p>Worked closely with users to understand their workflows and pain points. Prioritized features based on user research and data analysis. Collaborated with engineering to build scalable data pipelines and intuitive dashboards.</p>
+
+            <h4>Outcome</h4>
+            <p>Delivered analytics features used by major record labels and thousands of independent artists to make data-driven decisions about their careers and marketing strategies.</p>
+          </div>
+        </article>
+
+        <!-- Covid Finance App -->
+        <article class="project">
+          <div class="project-header">
+            <h3>Covid Finance App</h3>
+            <span class="project-type">Personal Project</span>
+          </div>
+          <p class="project-summary">
+            A personal finance tracking application built during the pandemic to help visualize spending patterns and budget more effectively.
+          </p>
+          <div class="project-body">
+            <h4>Problem</h4>
+            <p>During COVID-19, my spending patterns changed dramatically - no commuting, more delivery, different categories. I wanted a way to track and visualize these changes that was more flexible than existing apps.</p>
+
+            <h4>Approach</h4>
+            <p>Built a Streamlit application in Python that connects to bank transaction data, categorizes spending, and generates interactive visualizations. Used Pandas for data manipulation and Plotly for charts. Focused on making it easy to customize categories and time periods.</p>
+
+            <h4>Outcome</h4>
+            <p>Built a functional tool that revealed interesting patterns in my spending behavior. The project reinforced the value of building custom tools to solve personal problems and deepened my experience with data visualization.</p>
+          </div>
+          <a href="https://github.com/nahutch" class="project-link" target="_blank">View on GitHub →</a>
+        </article>
+
+        <!-- UFC Prediction -->
+        <article class="project">
+          <div class="project-header">
+            <h3>UFC Fight Prediction Model</h3>
+            <span class="project-type">Personal Project</span>
+          </div>
+          <p class="project-summary">
+            A machine learning model to predict UFC fight outcomes using historical fighter data and statistics.
+          </p>
+          <div class="project-body">
+            <h4>Problem</h4>
+            <p>UFC fights are notoriously hard to predict - even experts often get it wrong. I wanted to see if a data-driven approach could outperform baseline predictions and understand what factors most influence fight outcomes.</p>
+
+            <h4>Approach</h4>
+            <p>Collected historical fight data including fighter stats, reach, age, win/loss records, and fighting styles. Experimented with multiple models including logistic regression, random forests, and neural networks. Feature engineering was key - created composite metrics for fighting style matchups.</p>
+
+            <h4>Outcome</h4>
+            <p>The model achieved prediction accuracy above baseline, with reach differential and recent win streaks emerging as strong predictive features. The project was a great exercise in feature engineering and working with messy real-world data.</p>
+          </div>
+          <a href="https://github.com/nahutch" class="project-link" target="_blank">View on GitHub →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beyond Work -->
+  <section id="beyond" class="beyond-work">
+    <div class="container">
+      <div class="section-header">
+        <h2>Beyond Work</h2>
+      </div>
+      <p class="beyond-intro">
+        When I'm not building products, I'm usually surfing, skiing, or exploring somewhere new. I also love reading - recent favorite is <em>Behave</em> by Robert Sapolsky.
+      </p>
+      <div class="photo-grid">
+        <img src="tavabeach1.jpg" alt="Tavarua, Fiji">
+        <img src="MexicoSunset.png" alt="Punta Mita, Mexico">
+        <img src="SydneyOperaHouse.png" alt="Sydney, Australia">
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="footer">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Nathan Hutchison 2020</p>
-      <p class="m-0 text-center text-white"><small>Photos on this page from Tavarua, Fiji</small></p>
+      <div class="footer-links">
+        <a href="mailto:nathanehutchison@gmail.com">nathanehutchison@gmail.com</a>
+        <a href="https://www.linkedin.com/in/nahutch" target="_blank">LinkedIn</a>
+        <a href="https://github.com/nahutch" target="_blank">GitHub</a>
+      </div>
+      <p class="footer-copyright">&copy; 2025 Nathan Hutchison</p>
     </div>
-    <!-- /.container -->
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Mobile nav toggle
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('show');
+    }
 
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('show');
+      });
+    });
+
+    // Experience accordion
+    function toggleExperience(header) {
+      const item = header.parentElement;
+      const details = item.querySelector('.experience-details');
+      const toggle = item.querySelector('.experience-toggle');
+
+      details.classList.toggle('show');
+      toggle.textContent = details.classList.contains('show') ? '− Details' : '+ Details';
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
